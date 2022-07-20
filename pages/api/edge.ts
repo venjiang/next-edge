@@ -9,7 +9,7 @@ export default (req: NextRequest) => {
 
     // return NextResponse(` ip: ${req.ip}, geo.country: ${country}, geo.city: ${city}, geo.region: ${region}`)
     return NextResponse.json({
-        name: `Hello, from ${req.url} I'm now an Edge Function!`,
+        name: `Hello, from ${req.url} I'm now an Edge Function! 使用Github部署`,
         req: JSON.stringify(req),
     });
 };
